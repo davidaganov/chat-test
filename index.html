@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Vite + Vue</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script
+      type="module"
+      src="/src/main.js"
+    ></script>
+    <script type="text/javascript">
+      !(function () {
+        function t(t, e) {
+          return function () {
+            window.carrotquestasync.push(t, arguments)
+          }
+        }
+        if ("undefined" == typeof carrotquest) {
+          var e = document.createElement("script")
+          ;(e.type = "text/javascript"),
+            (e.async = !0),
+            (e.src = "https://cdn.carrotquest.app/api.min.js"),
+            document.getElementsByTagName("head")[0].appendChild(e),
+            (window.carrotquest = {}),
+            (window.carrotquestasync = []),
+            (carrotquest.settings = {})
+          for (
+            var n = [
+                "connect",
+                "track",
+                "identify",
+                "auth",
+                "onReady",
+                "addCallback",
+                "removeCallback",
+                "trackMessageInteraction"
+              ],
+              a = 0;
+            a < n.length;
+            a++
+          )
+            carrotquest[n[a]] = t(n[a])
+        }
+      })(),
+        carrotquest.connect("58012-8d7e047d3b1a0fe0c800833525")
+    </script>
+  </body>
+</html>
